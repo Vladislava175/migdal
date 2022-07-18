@@ -1,0 +1,21 @@
+{
+  "superClaimType": { "label": "סוג תביעת על", "required": true },
+  "eventDate": { "label": "תאריך אירוע", "required": true },
+  "claimCause": { "label": "סיבת אירוע", "required": true },
+  "injuryType": { "label": "מהות אירוע", "required": false },
+  "submitedBy": { "label": "הוגשה באמצעות", "required": true },
+  "submitionMethod": { "label": "אופן קבלת התביע", "required": true },
+  "deliveryFlag": { "label": "מועדף", "required": false },
+  "name": { "label": "שם איש קשר", "required": true },
+  "type": { "label": "סוג", "required": true },
+  "address": { "label": "כתובת", "required": false },
+  "phoneNumber": { "label": "טלפון", "required": true },
+  "email": { "label": "דואר\"ל", "required": false },
+  "btns" : {
+    "reload" : "רענון תהליך",
+    "next" : "המשך",
+    "listContacts" : "מספר אנשי קשר בתהליך ",
+    "resetContacts" : "איפוס אנשי קשר",
+    "addContact" : "הוסף איש קשר"
+  }
+}

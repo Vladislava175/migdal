@@ -9,10 +9,14 @@
               [id]="item.key" [type]="item.type">
       <input *ngSwitchCase="'boolean'" [formControlName]="item.key"
               [id]="item.key" [type]="item.type">
+      <input *ngSwitchCase="'date'" [formControlName]="item.key"
+              [id]="item.key" [type]="item.type">
+      <input *ngSwitchCase="'submit'" [value]="item.label"
+              [id]="item.key" [type]="item.type"  (click)="item.func()">
       <select [id]="item.key" *ngSwitchCase="'dropdown'" [formControlName]="item.key">
         <option *ngFor="let opt of item.options" [value]="opt.key">{{opt.value}}</option>
       </select>
     </div>
-    <div class="errorMessage" *ngIf="!isValid">{{item.label}} is required</div>
+    <div class="errorMessage" *ngIf="!isValid" style="color: rgb(164, 10, 10);">Required</div>
   </div>
   

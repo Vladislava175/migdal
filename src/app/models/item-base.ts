@@ -7,6 +7,7 @@ export class ItemBase<T> {
     controlType: string;
     type: string;
     options: {key: string, value: string}[];
+    func: any;
   
     constructor(options: {
         value?: T;
@@ -17,6 +18,7 @@ export class ItemBase<T> {
         controlType?: string;
         type?: string;
         options?: {key: string, value: string}[];
+        func?: any;
       } = {}) {
       this.value = options.value;
       this.key = options.key || '';
@@ -26,6 +28,7 @@ export class ItemBase<T> {
       this.controlType = options.controlType || '';
       this.type = options.type || '';
       this.options = options.options || [];
+      this.func = options.func;
     }
   }
   

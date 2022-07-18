@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./process-info.component.css']
 })
 export class ProcessInfoComponent implements OnInit {
-  items!: any
+  items!: any; 
   constructor(private fcs: FormControlService) { }
 
   ngOnInit(): void {
